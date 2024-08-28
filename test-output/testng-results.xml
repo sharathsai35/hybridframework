@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="18" passed="18" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2024-05-07T14:15:16 IST" name="Default suite" finished-at="2024-05-07T14:28:37 IST" duration-ms="801217">
+    <groups>
+    </groups>
+    <test started-at="2024-05-07T14:15:16 IST" name="Default test" finished-at="2024-05-07T14:28:37 IST" duration-ms="801217">
+      <class name="TestScript.ControlsMention">
+        <test-method is-config="true" signature="Setup()[pri:0, instance:TestScript.ControlsMention@795509d9]" started-at="2024-05-07T14:15:16 IST" name="Setup" finished-at="2024-05-07T14:15:21 IST" duration-ms="5142" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="Login()[pri:1, instance:TestScript.ControlsMention@795509d9]" started-at="2024-05-07T14:15:21 IST" name="Login" finished-at="2024-05-07T14:15:33 IST" duration-ms="11988" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Login -->
+        <test-method is-config="true" signature="closebroswer()[pri:0, instance:TestScript.ControlsMention@795509d9]" started-at="2024-05-07T14:15:33 IST" name="closebroswer" finished-at="2024-05-07T14:15:34 IST" duration-ms="555" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebroswer -->
+        <test-method is-config="true" signature="Setup()[pri:0, instance:TestScript.ControlsMention@795509d9]" started-at="2024-05-07T14:15:34 IST" name="Setup" finished-at="2024-05-07T14:15:37 IST" duration-ms="2682" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="Click_On_Dashboard()[pri:2, instance:TestScript.ControlsMention@795509d9]" started-at="2024-05-07T14:15:37 IST" name="Click_On_Dashboard" finished-at="2024-05-07T14:15:51 IST" duration-ms="14866" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Click_On_Dashboard -->
+        <test-method is-config="true" signature="closebroswer()[pri:0, instance:TestScript.ControlsMention@795509d9]" started-at="2024-05-07T14:15:51 IST" name="closebroswer" finished-at="2024-05-07T14:15:52 IST" duration-ms="298" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebroswer -->
+        <test-method is-config="true" signature="Setup()[pri:0, instance:TestScript.ControlsMention@795509d9]" started-at="2024-05-07T14:15:52 IST" name="Setup" finished-at="2024-05-07T14:15:54 IST" duration-ms="2496" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="Click_On_Controls()[pri:3, instance:TestScript.ControlsMention@795509d9]" started-at="2024-05-07T14:15:54 IST" name="Click_On_Controls" finished-at="2024-05-07T14:16:13 IST" duration-ms="18526" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Click_On_Controls -->
+        <test-method is-config="true" signature="closebroswer()[pri:0, instance:TestScript.ControlsMention@795509d9]" started-at="2024-05-07T14:16:13 IST" name="closebroswer" finished-at="2024-05-07T14:16:13 IST" duration-ms="273" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebroswer -->
+        <test-method is-config="true" signature="Setup()[pri:0, instance:TestScript.ControlsMention@795509d9]" started-at="2024-05-07T14:16:13 IST" name="Setup" finished-at="2024-05-07T14:16:16 IST" duration-ms="2492" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="Click_On_Mention_In_Controls()[pri:4, instance:TestScript.ControlsMention@795509d9]" started-at="2024-05-07T14:16:16 IST" name="Click_On_Mention_In_Controls" finished-at="2024-05-07T14:16:37 IST" duration-ms="21133" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Click_On_Mention_In_Controls -->
+        <test-method is-config="true" signature="closebroswer()[pri:0, instance:TestScript.ControlsMention@795509d9]" started-at="2024-05-07T14:16:37 IST" name="closebroswer" finished-at="2024-05-07T14:16:37 IST" duration-ms="338" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebroswer -->
+        <test-method is-config="true" signature="Setup()[pri:0, instance:TestScript.ControlsMention@795509d9]" started-at="2024-05-07T14:16:37 IST" name="Setup" finished-at="2024-05-07T14:16:40 IST" duration-ms="2568" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="Disable_Mentions()[pri:5, instance:TestScript.ControlsMention@795509d9]" started-at="2024-05-07T14:16:40 IST" name="Disable_Mentions" finished-at="2024-05-07T14:17:17 IST" duration-ms="37674" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Disable_Mentions -->
+        <test-method is-config="true" signature="closebroswer()[pri:0, instance:TestScript.ControlsMention@795509d9]" started-at="2024-05-07T14:17:17 IST" name="closebroswer" finished-at="2024-05-07T14:17:18 IST" duration-ms="346" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebroswer -->
+        <test-method is-config="true" signature="Setup()[pri:0, instance:TestScript.ControlsMention@795509d9]" started-at="2024-05-07T14:17:18 IST" name="Setup" finished-at="2024-05-07T14:17:20 IST" duration-ms="2679" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="Enable_Mentions()[pri:6, instance:TestScript.ControlsMention@795509d9]" started-at="2024-05-07T14:17:20 IST" name="Enable_Mentions" finished-at="2024-05-07T14:17:58 IST" duration-ms="37472" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Enable_Mentions -->
+        <test-method is-config="true" signature="closebroswer()[pri:0, instance:TestScript.ControlsMention@795509d9]" started-at="2024-05-07T14:17:58 IST" name="closebroswer" finished-at="2024-05-07T14:17:58 IST" duration-ms="335" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebroswer -->
+        <test-method is-config="true" signature="Setup()[pri:0, instance:TestScript.ControlsMention@795509d9]" started-at="2024-05-07T14:17:58 IST" name="Setup" finished-at="2024-05-07T14:18:01 IST" duration-ms="2715" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="Disable_Mention_In_One_To_One_Chat()[pri:7, instance:TestScript.ControlsMention@795509d9]" started-at="2024-05-07T14:18:01 IST" name="Disable_Mention_In_One_To_One_Chat" finished-at="2024-05-07T14:18:44 IST" duration-ms="43594" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Disable_Mention_In_One_To_One_Chat -->
+        <test-method is-config="true" signature="closebroswer()[pri:0, instance:TestScript.ControlsMention@795509d9]" started-at="2024-05-07T14:18:44 IST" name="closebroswer" finished-at="2024-05-07T14:18:45 IST" duration-ms="383" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebroswer -->
+        <test-method is-config="true" signature="Setup()[pri:0, instance:TestScript.ControlsMention@795509d9]" started-at="2024-05-07T14:18:45 IST" name="Setup" finished-at="2024-05-07T14:18:47 IST" duration-ms="2568" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="Disable_Mention_In_Group_Chat()[pri:8, instance:TestScript.ControlsMention@795509d9]" started-at="2024-05-07T14:18:47 IST" name="Disable_Mention_In_Group_Chat" finished-at="2024-05-07T14:19:32 IST" duration-ms="44320" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Disable_Mention_In_Group_Chat -->
+        <test-method is-config="true" signature="closebroswer()[pri:0, instance:TestScript.ControlsMention@795509d9]" started-at="2024-05-07T14:19:32 IST" name="closebroswer" finished-at="2024-05-07T14:19:32 IST" duration-ms="309" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebroswer -->
+        <test-method is-config="true" signature="Setup()[pri:0, instance:TestScript.ControlsMention@795509d9]" started-at="2024-05-07T14:19:32 IST" name="Setup" finished-at="2024-05-07T14:19:35 IST" duration-ms="2568" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="Can_Mention_Non_Group_Users_Within_A_group()[pri:9, instance:TestScript.ControlsMention@795509d9]" started-at="2024-05-07T14:19:35 IST" name="Can_Mention_Non_Group_Users_Within_A_group" finished-at="2024-05-07T14:20:23 IST" duration-ms="48852" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Can_Mention_Non_Group_Users_Within_A_group -->
+        <test-method is-config="true" signature="closebroswer()[pri:0, instance:TestScript.ControlsMention@795509d9]" started-at="2024-05-07T14:20:23 IST" name="closebroswer" finished-at="2024-05-07T14:20:24 IST" duration-ms="330" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebroswer -->
+        <test-method is-config="true" signature="Setup()[pri:0, instance:TestScript.ControlsMention@795509d9]" started-at="2024-05-07T14:20:24 IST" name="Setup" finished-at="2024-05-07T14:20:26 IST" duration-ms="2705" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="Enter_Minimum_3_characters_after_to_show_mention_users()[pri:10, instance:TestScript.ControlsMention@795509d9]" started-at="2024-05-07T14:20:26 IST" name="Enter_Minimum_3_characters_after_to_show_mention_users" finished-at="2024-05-07T14:21:20 IST" duration-ms="53269" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Enter_Minimum_3_characters_after_to_show_mention_users -->
+        <test-method is-config="true" signature="closebroswer()[pri:0, instance:TestScript.ControlsMention@795509d9]" started-at="2024-05-07T14:21:20 IST" name="closebroswer" finished-at="2024-05-07T14:21:20 IST" duration-ms="312" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebroswer -->
+        <test-method is-config="true" signature="Setup()[pri:0, instance:TestScript.ControlsMention@795509d9]" started-at="2024-05-07T14:21:20 IST" name="Setup" finished-at="2024-05-07T14:21:23 IST" duration-ms="2541" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="Combination_Of_Disable_Mention_In_One_To_One_Chat_And_Group_Chat()[pri:11, instance:TestScript.ControlsMention@795509d9]" started-at="2024-05-07T14:21:23 IST" name="Combination_Of_Disable_Mention_In_One_To_One_Chat_And_Group_Chat" finished-at="2024-05-07T14:22:07 IST" duration-ms="43934" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Combination_Of_Disable_Mention_In_One_To_One_Chat_And_Group_Chat -->
+        <test-method is-config="true" signature="closebroswer()[pri:0, instance:TestScript.ControlsMention@795509d9]" started-at="2024-05-07T14:22:07 IST" name="closebroswer" finished-at="2024-05-07T14:22:07 IST" duration-ms="335" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebroswer -->
+        <test-method is-config="true" signature="Setup()[pri:0, instance:TestScript.ControlsMention@795509d9]" started-at="2024-05-07T14:22:07 IST" name="Setup" finished-at="2024-05-07T14:22:10 IST" duration-ms="2769" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="Combination_Of_Disable_Mention_In_One_To_One_Chat_And_Can_Mention_Non_Group_Users()[pri:12, instance:TestScript.ControlsMention@795509d9]" started-at="2024-05-07T14:22:10 IST" name="Combination_Of_Disable_Mention_In_One_To_One_Chat_And_Can_Mention_Non_Group_Users" finished-at="2024-05-07T14:22:58 IST" duration-ms="48727" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Combination_Of_Disable_Mention_In_One_To_One_Chat_And_Can_Mention_Non_Group_Users -->
+        <test-method is-config="true" signature="closebroswer()[pri:0, instance:TestScript.ControlsMention@795509d9]" started-at="2024-05-07T14:22:58 IST" name="closebroswer" finished-at="2024-05-07T14:22:59 IST" duration-ms="359" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebroswer -->
+        <test-method is-config="true" signature="Setup()[pri:0, instance:TestScript.ControlsMention@795509d9]" started-at="2024-05-07T14:22:59 IST" name="Setup" finished-at="2024-05-07T14:23:01 IST" duration-ms="2535" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="Combination_Of_Disable_Mention_In_One_To_One_Chat_And_Enter_Minimum_3_Character()[pri:13, instance:TestScript.ControlsMention@795509d9]" started-at="2024-05-07T14:23:01 IST" name="Combination_Of_Disable_Mention_In_One_To_One_Chat_And_Enter_Minimum_3_Character" finished-at="2024-05-07T14:23:55 IST" duration-ms="53533" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Combination_Of_Disable_Mention_In_One_To_One_Chat_And_Enter_Minimum_3_Character -->
+        <test-method is-config="true" signature="closebroswer()[pri:0, instance:TestScript.ControlsMention@795509d9]" started-at="2024-05-07T14:23:55 IST" name="closebroswer" finished-at="2024-05-07T14:23:55 IST" duration-ms="337" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebroswer -->
+        <test-method is-config="true" signature="Setup()[pri:0, instance:TestScript.ControlsMention@795509d9]" started-at="2024-05-07T14:23:55 IST" name="Setup" finished-at="2024-05-07T14:23:58 IST" duration-ms="2626" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="Combination_Of_Disable_Mention_In_One_To_One_Chat_And_Group_Chat_And_Enter_Minimum_3_Character()[pri:14, instance:TestScript.ControlsMention@795509d9]" started-at="2024-05-07T14:23:58 IST" name="Combination_Of_Disable_Mention_In_One_To_One_Chat_And_Group_Chat_And_Enter_Minimum_3_Character" finished-at="2024-05-07T14:24:51 IST" duration-ms="53044" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Combination_Of_Disable_Mention_In_One_To_One_Chat_And_Group_Chat_And_Enter_Minimum_3_Character -->
+        <test-method is-config="true" signature="closebroswer()[pri:0, instance:TestScript.ControlsMention@795509d9]" started-at="2024-05-07T14:24:51 IST" name="closebroswer" finished-at="2024-05-07T14:24:51 IST" duration-ms="440" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebroswer -->
+        <test-method is-config="true" signature="Setup()[pri:0, instance:TestScript.ControlsMention@795509d9]" started-at="2024-05-07T14:24:51 IST" name="Setup" finished-at="2024-05-07T14:24:54 IST" duration-ms="2550" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="Combination_Of_Disable_Mention_In_One_To_One_Chat_And_Enter_Minimum_3_Characters_And_Can_Mention_Non_Group_Within_A_Group()[pri:15, instance:TestScript.ControlsMention@795509d9]" started-at="2024-05-07T14:24:54 IST" name="Combination_Of_Disable_Mention_In_One_To_One_Chat_And_Enter_Minimum_3_Characters_And_Can_Mention_Non_Group_Within_A_Group" finished-at="2024-05-07T14:25:47 IST" duration-ms="53448" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Combination_Of_Disable_Mention_In_One_To_One_Chat_And_Enter_Minimum_3_Characters_And_Can_Mention_Non_Group_Within_A_Group -->
+        <test-method is-config="true" signature="closebroswer()[pri:0, instance:TestScript.ControlsMention@795509d9]" started-at="2024-05-07T14:25:47 IST" name="closebroswer" finished-at="2024-05-07T14:25:48 IST" duration-ms="432" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebroswer -->
+        <test-method is-config="true" signature="Setup()[pri:0, instance:TestScript.ControlsMention@795509d9]" started-at="2024-05-07T14:25:48 IST" name="Setup" finished-at="2024-05-07T14:25:50 IST" duration-ms="2544" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="Combination_Of_Disable_Mention_In_One_To_One_Chat_And_Group_Chat_And_Can_Mention_Non_Group_Within_A_Group()[pri:16, instance:TestScript.ControlsMention@795509d9]" started-at="2024-05-07T14:25:50 IST" name="Combination_Of_Disable_Mention_In_One_To_One_Chat_And_Group_Chat_And_Can_Mention_Non_Group_Within_A_Group" finished-at="2024-05-07T14:26:44 IST" duration-ms="53672" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Combination_Of_Disable_Mention_In_One_To_One_Chat_And_Group_Chat_And_Can_Mention_Non_Group_Within_A_Group -->
+        <test-method is-config="true" signature="closebroswer()[pri:0, instance:TestScript.ControlsMention@795509d9]" started-at="2024-05-07T14:26:44 IST" name="closebroswer" finished-at="2024-05-07T14:26:44 IST" duration-ms="406" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebroswer -->
+        <test-method is-config="true" signature="Setup()[pri:0, instance:TestScript.ControlsMention@795509d9]" started-at="2024-05-07T14:26:44 IST" name="Setup" finished-at="2024-05-07T14:26:47 IST" duration-ms="2624" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="Combination_Of_Disable_Mention_In_Group_Chat_And_Can_Mention_Non_Group_Within_A_Group_And_Enter_Minimum_3_Characters()[pri:17, instance:TestScript.ControlsMention@795509d9]" started-at="2024-05-07T14:26:47 IST" name="Combination_Of_Disable_Mention_In_Group_Chat_And_Can_Mention_Non_Group_Within_A_Group_And_Enter_Minimum_3_Characters" finished-at="2024-05-07T14:27:41 IST" duration-ms="53676" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Combination_Of_Disable_Mention_In_Group_Chat_And_Can_Mention_Non_Group_Within_A_Group_And_Enter_Minimum_3_Characters -->
+        <test-method is-config="true" signature="closebroswer()[pri:0, instance:TestScript.ControlsMention@795509d9]" started-at="2024-05-07T14:27:41 IST" name="closebroswer" finished-at="2024-05-07T14:27:41 IST" duration-ms="407" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebroswer -->
+        <test-method is-config="true" signature="Setup()[pri:0, instance:TestScript.ControlsMention@795509d9]" started-at="2024-05-07T14:27:41 IST" name="Setup" finished-at="2024-05-07T14:27:44 IST" duration-ms="2893" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Setup -->
+        <test-method signature="Combination_Of_Disable_Mention_In_One_To_One_Chat_And_Group_Chat_And_Can_Mention_Non_Group_Within_A_Group_And_Enter_Minimum_3_Characters()[pri:18, instance:TestScript.ControlsMention@795509d9]" started-at="2024-05-07T14:27:44 IST" name="Combination_Of_Disable_Mention_In_One_To_One_Chat_And_Group_Chat_And_Can_Mention_Non_Group_Within_A_Group_And_Enter_Minimum_3_Characters" finished-at="2024-05-07T14:28:37 IST" duration-ms="53017" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- Combination_Of_Disable_Mention_In_One_To_One_Chat_And_Group_Chat_And_Can_Mention_Non_Group_Within_A_Group_And_Enter_Minimum_3_Characters -->
+        <test-method is-config="true" signature="closebroswer()[pri:0, instance:TestScript.ControlsMention@795509d9]" started-at="2024-05-07T14:28:37 IST" name="closebroswer" finished-at="2024-05-07T14:28:37 IST" duration-ms="424" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- closebroswer -->
+      </class> <!-- TestScript.ControlsMention -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
