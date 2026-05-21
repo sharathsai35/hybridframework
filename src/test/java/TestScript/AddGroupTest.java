@@ -16,29 +16,29 @@ import Validation.Validation_AddGroup;
 public class AddGroupTest {
 	WebDriver driver;
 	AddGroup log;
+
 	@BeforeMethod
-	public void Setup() throws Exception
-	{
-		List<String>info=PropertyReader.getdata("Browser", 1);
-		String broswername=info.get(0),drivername=info.get(1),url=info.get(2);
-		driver=Browser.Launching_Browser(broswername, drivername);
-		driver=Browser.Open_Url(url);
+	public void Setup() throws Exception {
+		List<String> info = PropertyReader.getdata("Browser", 1);
+		String broswername = info.get(0), drivername = info.get(1), url = info.get(2);
+		driver = Browser.Launching_Browser(broswername, drivername);
+		driver = Browser.Open_Url(url);
 	}
 
 	@AfterMethod
-	public void closebroswer()
-	{
+	public void closebroswer() {
 		driver.close();
 		ExtentReportManager.stopReport();
 	}
-  @Test(priority=1)
-  public void Login() throws Exception {
-		ExtentReportManager.startTest("Login", "test case description","test case pass");
+
+	@Test(priority = 1)
+	public void Login() throws Exception {
+		ExtentReportManager.startTest("Login", "test case description", "test case pass");
 		ExtentReportManager.startReport();
-		log=new AddGroup(driver);
-		List<String> info= PropertyReader.getdata("AddGrouppage", 1);
-		String Email=info.get(0);
-		String Password=info.get(1);
+		log = new AddGroup(driver);
+		List<String> info = PropertyReader.getdata("AddGrouppage", 1);
+		String Email = info.get(0);
+		String Password = info.get(1);
 		log.Click_On_Login_Link();
 		Thread.sleep(3000);
 		log.TRoop_Login(Email, Password);
@@ -53,15 +53,16 @@ public class AddGroupTest {
 		ExtentReportManager.logInfo("Password : sai@123");
 		ExtentReportManager.logInfo("Click on login button");
 		ExtentReportManager.logPass(Validation_AddGroup.Valid_Login);
-  }
-  @Test(priority=2)
-  public void Click_AddButton() throws Exception {
-		ExtentReportManager.startTest("Click_AddButton", "test case description","test case pass");
+	}
+
+	@Test(priority = 2)
+	public void Click_AddButton() throws Exception {
+		ExtentReportManager.startTest("Click_AddButton", "test case description", "test case pass");
 		ExtentReportManager.startReport();
-		log=new AddGroup(driver);
-		List<String> info= PropertyReader.getdata("AddGrouppage", 1);
-		String Email=info.get(0);
-		String Password=info.get(1);
+		log = new AddGroup(driver);
+		List<String> info = PropertyReader.getdata("AddGrouppage", 1);
+		String Email = info.get(0);
+		String Password = info.get(1);
 		log.Click_On_Login_Link();
 		Thread.sleep(3000);
 		log.TRoop_Login(Email, Password);
@@ -79,15 +80,16 @@ public class AddGroupTest {
 		ExtentReportManager.logInfo("Click on login button");
 		ExtentReportManager.logInfo("Click on Add button");
 		ExtentReportManager.logPass(Validation_AddGroup.Click_Add);
-  }
-  @Test(priority=3)
-  public void Click_Submit_In_AddGroup() throws Exception {
-		ExtentReportManager.startTest("Click_Submit_In_AddGroup", "test case description","test case pass");
+	}
+
+	@Test(priority = 3)
+	public void Click_Submit_In_AddGroup() throws Exception {
+		ExtentReportManager.startTest("Click_Submit_In_AddGroup", "test case description", "test case pass");
 		ExtentReportManager.startReport();
-		log=new AddGroup(driver);
-		List<String> info= PropertyReader.getdata("AddGrouppage", 1);
-		String Email=info.get(0);
-		String Password=info.get(1);
+		log = new AddGroup(driver);
+		List<String> info = PropertyReader.getdata("AddGrouppage", 1);
+		String Email = info.get(0);
+		String Password = info.get(1);
 		log.Click_On_Login_Link();
 		Thread.sleep(3000);
 		log.TRoop_Login(Email, Password);
@@ -109,15 +111,16 @@ public class AddGroupTest {
 		ExtentReportManager.logInfo("Group Name : ");
 		ExtentReportManager.logInfo("Group Description : ");
 		ExtentReportManager.logPass(Validation_AddGroup.Click_Create);
-  }
-  @Test(priority=4)
-  public void Enter_Only_GroupName() throws Exception {
-		ExtentReportManager.startTest("Enter_Only_GroupName", "test case description","test case pass");
+	}
+
+	@Test(priority = 4)
+	public void Enter_Only_GroupName() throws Exception {
+		ExtentReportManager.startTest("Enter_Only_GroupName", "test case description", "test case pass");
 		ExtentReportManager.startReport();
-		log=new AddGroup(driver);
-		List<String> info= PropertyReader.getdata("AddGrouppage", 1);
-		String Email=info.get(0);
-		String Password=info.get(1);
+		log = new AddGroup(driver);
+		List<String> info = PropertyReader.getdata("AddGrouppage", 1);
+		String Email = info.get(0);
+		String Password = info.get(1);
 		log.Click_On_Login_Link();
 		Thread.sleep(3000);
 		log.TRoop_Login(Email, Password);
@@ -126,8 +129,8 @@ public class AddGroupTest {
 		Thread.sleep(3000);
 		log.Click_On_Add_Btn();
 		Thread.sleep(2000);
-		List<String> info1= PropertyReader.getData("AddGrouppage", 1);
-		String groupname=info1.get(0);
+		List<String> info1 = PropertyReader.getData("AddGrouppage", 1);
+		String groupname = info1.get(0);
 		Thread.sleep(2000);
 		log.Enter_GroupName(groupname);
 		Thread.sleep(1000);
@@ -144,15 +147,16 @@ public class AddGroupTest {
 		ExtentReportManager.logInfo("Group Name : Abc");
 		ExtentReportManager.logInfo("Group Description : ");
 		ExtentReportManager.logPass(Validation_AddGroup.Enter_Only_GroupName);
-  }
-  @Test(priority=5)
-  public void Enter_GroupName_1character() throws Exception {
-		ExtentReportManager.startTest("Enter_GroupName_1character", "test case description","test case pass");
+	}
+
+	@Test(priority = 5)
+	public void Enter_GroupName_1character() throws Exception {
+		ExtentReportManager.startTest("Enter_GroupName_1character", "test case description", "test case pass");
 		ExtentReportManager.startReport();
-		log=new AddGroup(driver);
-		List<String> info= PropertyReader.getdata("AddGrouppage", 1);
-		String Email=info.get(0);
-		String Password=info.get(1);
+		log = new AddGroup(driver);
+		List<String> info = PropertyReader.getdata("AddGrouppage", 1);
+		String Email = info.get(0);
+		String Password = info.get(1);
 		log.Click_On_Login_Link();
 		Thread.sleep(3000);
 		log.TRoop_Login(Email, Password);
@@ -161,8 +165,8 @@ public class AddGroupTest {
 		Thread.sleep(3000);
 		log.Click_On_Add_Btn();
 		Thread.sleep(2000);
-		List<String> info1= PropertyReader.getData("AddGrouppage", 2);
-		String groupname=info1.get(0);
+		List<String> info1 = PropertyReader.getData("AddGrouppage", 2);
+		String groupname = info1.get(0);
 		Thread.sleep(2000);
 		log.Enter_GroupName(groupname);
 		Thread.sleep(1000);
@@ -179,15 +183,16 @@ public class AddGroupTest {
 		ExtentReportManager.logInfo("Group Name : a");
 		ExtentReportManager.logInfo("Group Description : ");
 		ExtentReportManager.logPass(Validation_AddGroup.Enter_GroupName_1charater);
-  }
-  @Test(priority=6)
-  public void Enter_Only_Description() throws Exception {
-		ExtentReportManager.startTest("Enter_Only_Description", "test case description","test case pass");
+	}
+
+	@Test(priority = 6)
+	public void Enter_Only_Description() throws Exception {
+		ExtentReportManager.startTest("Enter_Only_Description", "test case description", "test case pass");
 		ExtentReportManager.startReport();
-		log=new AddGroup(driver);
-		List<String> info= PropertyReader.getdata("AddGrouppage", 1);
-		String Email=info.get(0);
-		String Password=info.get(1);
+		log = new AddGroup(driver);
+		List<String> info = PropertyReader.getdata("AddGrouppage", 1);
+		String Email = info.get(0);
+		String Password = info.get(1);
 		log.Click_On_Login_Link();
 		Thread.sleep(3000);
 		log.TRoop_Login(Email, Password);
@@ -196,11 +201,11 @@ public class AddGroupTest {
 		Thread.sleep(3000);
 		log.Click_On_Add_Btn();
 		Thread.sleep(2000);
-		List<String> info1= PropertyReader.getData("AddGrouppage", 3);
-		//String groupname=info1.get(0);
-		String description=info1.get(1);
+		List<String> info1 = PropertyReader.getData("AddGrouppage", 3);
+		// String groupname=info1.get(0);
+		String description = info1.get(1);
 		Thread.sleep(2000);
-		//log.Enter_GroupName(groupname);
+		// log.Enter_GroupName(groupname);
 		log.Enter_Description(description);
 		log.Description_Count();
 		Thread.sleep(1000);
@@ -219,15 +224,16 @@ public class AddGroupTest {
 		ExtentReportManager.logPass(Validation_AddGroup.Description_Count);
 		ExtentReportManager.logInfo("Click on create button");
 		ExtentReportManager.logPass(Validation_AddGroup.Enter_Only_Description);
-  }
-  @Test(priority=7)
-  public void Enter_GroupName_Description() throws Exception {
-		ExtentReportManager.startTest("Enter_GroupName_Description", "test case description","test case pass");
+	}
+
+	@Test(priority = 7)
+	public void Enter_GroupName_Description() throws Exception {
+		ExtentReportManager.startTest("Enter_GroupName_Description", "test case description", "test case pass");
 		ExtentReportManager.startReport();
-		log=new AddGroup(driver);
-		List<String> info= PropertyReader.getdata("AddGrouppage", 1);
-		String Email=info.get(0);
-		String Password=info.get(1);
+		log = new AddGroup(driver);
+		List<String> info = PropertyReader.getdata("AddGrouppage", 1);
+		String Email = info.get(0);
+		String Password = info.get(1);
 		log.Click_On_Login_Link();
 		Thread.sleep(3000);
 		log.TRoop_Login(Email, Password);
@@ -236,9 +242,9 @@ public class AddGroupTest {
 		Thread.sleep(3000);
 		log.Click_On_Add_Btn();
 		Thread.sleep(2000);
-		List<String> info1= PropertyReader.getData("AddGrouppage", 4);
-		String groupname=info1.get(0);
-		String description=info1.get(1);
+		List<String> info1 = PropertyReader.getData("AddGrouppage", 4);
+		String groupname = info1.get(0);
+		String description = info1.get(1);
 		Thread.sleep(2000);
 		log.Enter_GroupName(groupname);
 		log.Enter_Description(description);
@@ -259,15 +265,16 @@ public class AddGroupTest {
 		ExtentReportManager.logPass(Validation_AddGroup.Description_Count);
 		ExtentReportManager.logInfo("Click on create button");
 		ExtentReportManager.logPass(Validation_AddGroup.Enter_GroupName_Description);
-  }
-  @Test(priority=8)
-  public void Valid_Search_User() throws Exception {
-		ExtentReportManager.startTest("Valid_Search_User", "test case description","test case pass");
+	}
+
+	@Test(priority = 8)
+	public void Valid_Search_User() throws Exception {
+		ExtentReportManager.startTest("Valid_Search_User", "test case description", "test case pass");
 		ExtentReportManager.startReport();
-		log=new AddGroup(driver);
-		List<String> info= PropertyReader.getdata("AddGrouppage", 1);
-		String Email=info.get(0);
-		String Password=info.get(1);
+		log = new AddGroup(driver);
+		List<String> info = PropertyReader.getdata("AddGrouppage", 1);
+		String Email = info.get(0);
+		String Password = info.get(1);
 		log.Click_On_Login_Link();
 		Thread.sleep(3000);
 		log.TRoop_Login(Email, Password);
@@ -276,10 +283,10 @@ public class AddGroupTest {
 		Thread.sleep(3000);
 		log.Click_On_Add_Btn();
 		Thread.sleep(2000);
-		List<String> info1= PropertyReader.getData("AddGrouppage", 4);
-		String groupname=info1.get(0);
-		String description=info1.get(1);
-		String search=info1.get(2);
+		List<String> info1 = PropertyReader.getData("AddGrouppage", 4);
+		String groupname = info1.get(0);
+		String description = info1.get(1);
+		String search = info1.get(2);
 		Thread.sleep(2000);
 		log.Enter_GroupName(groupname);
 		log.Enter_Description(description);
@@ -303,15 +310,16 @@ public class AddGroupTest {
 		ExtentReportManager.logPass(Validation_AddGroup.Search_User);
 		ExtentReportManager.logInfo("Enter user name: abcd");
 		ExtentReportManager.logPass(Validation_AddGroup.Validate_AddUser1);
-  }
-  @Test(priority=9)
-  public void InValid_Search_User() throws Exception {
-		ExtentReportManager.startTest("InValid_Search_User", "test case description","test case pass");
+	}
+
+	@Test(priority = 9)
+	public void InValid_Search_User() throws Exception {
+		ExtentReportManager.startTest("InValid_Search_User", "test case description", "test case pass");
 		ExtentReportManager.startReport();
-		log=new AddGroup(driver);
-		List<String> info= PropertyReader.getdata("AddGrouppage", 1);
-		String Email=info.get(0);
-		String Password=info.get(1);
+		log = new AddGroup(driver);
+		List<String> info = PropertyReader.getdata("AddGrouppage", 1);
+		String Email = info.get(0);
+		String Password = info.get(1);
 		log.Click_On_Login_Link();
 		Thread.sleep(3000);
 		log.TRoop_Login(Email, Password);
@@ -320,10 +328,10 @@ public class AddGroupTest {
 		Thread.sleep(3000);
 		log.Click_On_Add_Btn();
 		Thread.sleep(2000);
-		List<String> info1= PropertyReader.getData("AddGrouppage", 5);
-		String groupname=info1.get(0);
-		String description=info1.get(1);
-		String search=info1.get(2);
+		List<String> info1 = PropertyReader.getData("AddGrouppage", 5);
+		String groupname = info1.get(0);
+		String description = info1.get(1);
+		String search = info1.get(2);
 		Thread.sleep(2000);
 		log.Enter_GroupName(groupname);
 		log.Enter_Description(description);
@@ -348,15 +356,16 @@ public class AddGroupTest {
 		ExtentReportManager.logPass(Validation_AddGroup.Search_User);
 		ExtentReportManager.logInfo("Enter User name : fdsfafdg");
 		ExtentReportManager.logPass(Validation_AddGroup.Invalid_Search_User);
-  }
-  @Test(priority=10)
-  public void Close_Search_User() throws Exception {
-		ExtentReportManager.startTest("Close_Search_User", "test case description","test case pass");
+	}
+
+	@Test(priority = 10)
+	public void Close_Search_User() throws Exception {
+		ExtentReportManager.startTest("Close_Search_User", "test case description", "test case pass");
 		ExtentReportManager.startReport();
-		log=new AddGroup(driver);
-		List<String> info= PropertyReader.getdata("AddGrouppage", 1);
-		String Email=info.get(0);
-		String Password=info.get(1);
+		log = new AddGroup(driver);
+		List<String> info = PropertyReader.getdata("AddGrouppage", 1);
+		String Email = info.get(0);
+		String Password = info.get(1);
 		log.Click_On_Login_Link();
 		Thread.sleep(3000);
 		log.TRoop_Login(Email, Password);
@@ -365,10 +374,10 @@ public class AddGroupTest {
 		Thread.sleep(3000);
 		log.Click_On_Add_Btn();
 		Thread.sleep(2000);
-		List<String> info1= PropertyReader.getData("AddGrouppage", 6);
-		String groupname=info1.get(0);
-		String description=info1.get(1);
-		String search=info1.get(2);
+		List<String> info1 = PropertyReader.getData("AddGrouppage", 6);
+		String groupname = info1.get(0);
+		String description = info1.get(1);
+		String search = info1.get(2);
 		Thread.sleep(2000);
 		log.Enter_GroupName(groupname);
 		log.Enter_Description(description);
@@ -394,15 +403,16 @@ public class AddGroupTest {
 		ExtentReportManager.logPass(Validation_AddGroup.Validate_AddUser1);
 		ExtentReportManager.logInfo("Click on close button in search");
 		ExtentReportManager.logPass(Validation_AddGroup.Close_Search_User);
-  }
-  @Test(priority=11)
-  public void Add_Users() throws Exception {
-		ExtentReportManager.startTest("Add_Users", "test case description","test case pass");
+	}
+
+	@Test(priority = 11)
+	public void Add_Users() throws Exception {
+		ExtentReportManager.startTest("Add_Users", "test case description", "test case pass");
 		ExtentReportManager.startReport();
-		log=new AddGroup(driver);
-		List<String> info= PropertyReader.getdata("AddGrouppage", 1);
-		String Email=info.get(0);
-		String Password=info.get(1);
+		log = new AddGroup(driver);
+		List<String> info = PropertyReader.getdata("AddGrouppage", 1);
+		String Email = info.get(0);
+		String Password = info.get(1);
 		log.Click_On_Login_Link();
 		Thread.sleep(3000);
 		log.TRoop_Login(Email, Password);
@@ -411,9 +421,9 @@ public class AddGroupTest {
 		Thread.sleep(3000);
 		log.Click_On_Add_Btn();
 		Thread.sleep(2000);
-		List<String> info1= PropertyReader.getData("AddGrouppage", 7);
-		String groupname=info1.get(0);
-		String description=info1.get(1);
+		List<String> info1 = PropertyReader.getData("AddGrouppage", 7);
+		String groupname = info1.get(0);
+		String description = info1.get(1);
 		Thread.sleep(2000);
 		log.Enter_GroupName(groupname);
 		log.Enter_Description(description);
@@ -445,15 +455,16 @@ public class AddGroupTest {
 		ExtentReportManager.logPass(Validation_AddGroup.Selected_Count);
 		ExtentReportManager.logInfo("Click on create button");
 		ExtentReportManager.logPass(Validation_AddGroup.Enter_GroupName_Description);
-  }
-  @Test(priority=12)
-  public void Add_Users_Make_Admin() throws Exception {
-		ExtentReportManager.startTest("Add_Users_Make_Admin", "test case description","test case pass");
+	}
+
+	@Test(priority = 12)
+	public void Add_Users_Make_Admin() throws Exception {
+		ExtentReportManager.startTest("Add_Users_Make_Admin", "test case description", "test case pass");
 		ExtentReportManager.startReport();
-		log=new AddGroup(driver);
-		List<String> info= PropertyReader.getdata("AddGrouppage", 1);
-		String Email=info.get(0);
-		String Password=info.get(1);
+		log = new AddGroup(driver);
+		List<String> info = PropertyReader.getdata("AddGrouppage", 1);
+		String Email = info.get(0);
+		String Password = info.get(1);
 		log.Click_On_Login_Link();
 		Thread.sleep(3000);
 		log.TRoop_Login(Email, Password);
@@ -462,9 +473,9 @@ public class AddGroupTest {
 		Thread.sleep(3000);
 		log.Click_On_Add_Btn();
 		Thread.sleep(2000);
-		List<String> info1= PropertyReader.getData("AddGrouppage", 7);
-		String groupname=info1.get(0);
-		String description=info1.get(1);
+		List<String> info1 = PropertyReader.getData("AddGrouppage", 7);
+		String groupname = info1.get(0);
+		String description = info1.get(1);
 		Thread.sleep(2000);
 		log.Enter_GroupName(groupname);
 		log.Enter_Description(description);
@@ -501,15 +512,16 @@ public class AddGroupTest {
 		ExtentReportManager.logPass(Validation_AddGroup.Make_Admin);
 		ExtentReportManager.logInfo("Click on create");
 		ExtentReportManager.logPass(Validation_AddGroup.Enter_GroupName_Description);
-  }
-  @Test(priority=13)
-  public void Add_Users_Make_Moderator() throws Exception {
-		ExtentReportManager.startTest("Add_Users_Make_Moderator", "test case description","test case pass");
+	}
+
+	@Test(priority = 13)
+	public void Add_Users_Make_Moderator() throws Exception {
+		ExtentReportManager.startTest("Add_Users_Make_Moderator", "test case description", "test case pass");
 		ExtentReportManager.startReport();
-		log=new AddGroup(driver);
-		List<String> info= PropertyReader.getdata("AddGrouppage", 1);
-		String Email=info.get(0);
-		String Password=info.get(1);
+		log = new AddGroup(driver);
+		List<String> info = PropertyReader.getdata("AddGrouppage", 1);
+		String Email = info.get(0);
+		String Password = info.get(1);
 		log.Click_On_Login_Link();
 		Thread.sleep(3000);
 		log.TRoop_Login(Email, Password);
@@ -518,9 +530,9 @@ public class AddGroupTest {
 		Thread.sleep(3000);
 		log.Click_On_Add_Btn();
 		Thread.sleep(2000);
-		List<String> info1= PropertyReader.getData("AddGrouppage", 7);
-		String groupname=info1.get(0);
-		String description=info1.get(1);
+		List<String> info1 = PropertyReader.getData("AddGrouppage", 7);
+		String groupname = info1.get(0);
+		String description = info1.get(1);
 		Thread.sleep(2000);
 		log.Enter_GroupName(groupname);
 		log.Enter_Description(description);
@@ -557,15 +569,16 @@ public class AddGroupTest {
 		ExtentReportManager.logPass(Validation_AddGroup.Make_Moderator);
 		ExtentReportManager.logInfo("Click on create");
 		ExtentReportManager.logPass(Validation_AddGroup.Enter_GroupName_Description);
-  }
-  @Test(priority=14)
-  public void Add_Remove_Users() throws Exception {
-		ExtentReportManager.startTest("Add_Remove_Users", "test case description","test case pass");
+	}
+
+	@Test(priority = 14)
+	public void Add_Remove_Users() throws Exception {
+		ExtentReportManager.startTest("Add_Remove_Users", "test case description", "test case pass");
 		ExtentReportManager.startReport();
-		log=new AddGroup(driver);
-		List<String> info= PropertyReader.getdata("AddGrouppage", 1);
-		String Email=info.get(0);
-		String Password=info.get(1);
+		log = new AddGroup(driver);
+		List<String> info = PropertyReader.getdata("AddGrouppage", 1);
+		String Email = info.get(0);
+		String Password = info.get(1);
 		log.Click_On_Login_Link();
 		Thread.sleep(3000);
 		log.TRoop_Login(Email, Password);
@@ -574,9 +587,9 @@ public class AddGroupTest {
 		Thread.sleep(3000);
 		log.Click_On_Add_Btn();
 		Thread.sleep(2000);
-		List<String> info1= PropertyReader.getData("AddGrouppage", 8);
-		String groupname=info1.get(0);
-		String description=info1.get(1);
+		List<String> info1 = PropertyReader.getData("AddGrouppage", 8);
+		String groupname = info1.get(0);
+		String description = info1.get(1);
 		Thread.sleep(2000);
 		log.Enter_GroupName(groupname);
 		log.Enter_Description(description);
@@ -591,7 +604,7 @@ public class AddGroupTest {
 		Thread.sleep(2000);
 		log.Remove_User();
 		log.Selected_Count1();
-		//log.Click_On_Create_Btn();
+		// log.Click_On_Create_Btn();
 		Thread.sleep(1000);
 		ExtentReportManager.logInfo("Chrome Browser Launched Successfully");
 		ExtentReportManager.logInfo("Navigate to URL");
@@ -611,15 +624,16 @@ public class AddGroupTest {
 		ExtentReportManager.logInfo("Click on Remove for user1");
 		ExtentReportManager.logPass(Validation_AddGroup.Remove_User);
 		ExtentReportManager.logPass(Validation_AddGroup.Selected_Count1);
-  }
-  @Test(priority=15)
-  public void Close_AddGroup() throws Exception {
-		ExtentReportManager.startTest("Close_AddGroup", "test case description","test case pass");
+	}
+
+	@Test(priority = 15)
+	public void Close_AddGroup() throws Exception {
+		ExtentReportManager.startTest("Close_AddGroup", "test case description", "test case pass");
 		ExtentReportManager.startReport();
-		log=new AddGroup(driver);
-		List<String> info= PropertyReader.getdata("AddGrouppage", 1);
-		String Email=info.get(0);
-		String Password=info.get(1);
+		log = new AddGroup(driver);
+		List<String> info = PropertyReader.getdata("AddGrouppage", 1);
+		String Email = info.get(0);
+		String Password = info.get(1);
 		log.Click_On_Login_Link();
 		Thread.sleep(3000);
 		log.TRoop_Login(Email, Password);
@@ -628,9 +642,9 @@ public class AddGroupTest {
 		Thread.sleep(3000);
 		log.Click_On_Add_Btn();
 		Thread.sleep(2000);
-		List<String> info1= PropertyReader.getData("AddGrouppage", 9);
-		String groupname=info1.get(0);
-		String description=info1.get(1);
+		List<String> info1 = PropertyReader.getData("AddGrouppage", 9);
+		String groupname = info1.get(0);
+		String description = info1.get(1);
 		Thread.sleep(2000);
 		log.Enter_GroupName(groupname);
 		log.Enter_Description(description);
@@ -659,20 +673,21 @@ public class AddGroupTest {
 		ExtentReportManager.logPass(Validation_AddGroup.Validate_AddUser2);
 		ExtentReportManager.logPass(Validation_AddGroup.Selected_Count);
 		ExtentReportManager.logInfo("Click on Close button of group");
-		
+
 		ExtentReportManager.logPass(Validation_AddGroup.Close_AddGroup);
 		log.Validate_Close_Group();
 		log.Close_AddGroup();
 		Thread.sleep(1000);
-  }
-  @Test(priority=16)
-  public void Create_Group() throws Exception {
-		ExtentReportManager.startTest("Create_Group", "test case description","test case pass");
+	}
+
+	@Test(priority = 16)
+	public void Create_Group() throws Exception {
+		ExtentReportManager.startTest("Create_Group", "test case description", "test case pass");
 		ExtentReportManager.startReport();
-		log=new AddGroup(driver);
-		List<String> info= PropertyReader.getdata("AddGrouppage", 1);
-		String Email=info.get(0);
-		String Password=info.get(1);
+		log = new AddGroup(driver);
+		List<String> info = PropertyReader.getdata("AddGrouppage", 1);
+		String Email = info.get(0);
+		String Password = info.get(1);
 		log.Click_On_Login_Link();
 		Thread.sleep(3000);
 		log.TRoop_Login(Email, Password);
@@ -681,9 +696,9 @@ public class AddGroupTest {
 		Thread.sleep(3000);
 		log.Click_On_Add_Btn();
 		Thread.sleep(2000);
-		List<String> info1= PropertyReader.getData("AddGrouppage", 9);
-		String groupname=info1.get(0);
-		String description=info1.get(1);
+		List<String> info1 = PropertyReader.getData("AddGrouppage", 9);
+		String groupname = info1.get(0);
+		String description = info1.get(1);
 		Thread.sleep(2000);
 		log.Enter_GroupName(groupname);
 		log.Enter_Description(description);
@@ -715,15 +730,16 @@ public class AddGroupTest {
 		ExtentReportManager.logPass(Validation_AddGroup.Selected_Count);
 		ExtentReportManager.logInfo("Click on create button");
 		ExtentReportManager.logPass(Validation_AddGroup.Enter_GroupName_Description);
-  }
-  @Test(priority=17)
-  public void Click_Checkbox_Airtime_Group() throws Exception {
-		ExtentReportManager.startTest("Click_Checkbox_Airtime_Group", "test case description","test case pass");
+	}
+
+	@Test(priority = 17)
+	public void Click_Checkbox_Airtime_Group() throws Exception {
+		ExtentReportManager.startTest("Click_Checkbox_Airtime_Group", "test case description", "test case pass");
 		ExtentReportManager.startReport();
-		log=new AddGroup(driver);
-		List<String> info= PropertyReader.getdata("AddGrouppage", 1);
-		String Email=info.get(0);
-		String Password=info.get(1);
+		log = new AddGroup(driver);
+		List<String> info = PropertyReader.getdata("AddGrouppage", 1);
+		String Email = info.get(0);
+		String Password = info.get(1);
 		log.Click_On_Login_Link();
 		Thread.sleep(3000);
 		log.TRoop_Login(Email, Password);
@@ -732,9 +748,9 @@ public class AddGroupTest {
 		Thread.sleep(3000);
 		log.Click_On_Add_Btn();
 		Thread.sleep(2000);
-		List<String> info1= PropertyReader.getData("AddGrouppage", 9);
-		String groupname=info1.get(0);
-		String description=info1.get(1);
+		List<String> info1 = PropertyReader.getData("AddGrouppage", 9);
+		String groupname = info1.get(0);
+		String description = info1.get(1);
 		Thread.sleep(2000);
 		log.Enter_GroupName(groupname);
 		log.Enter_Description(description);
@@ -769,15 +785,16 @@ public class AddGroupTest {
 		ExtentReportManager.logInfo("Click on checkbox of Airtime Group");
 		ExtentReportManager.logInfo("Click on i symbol of Airtime group");
 		ExtentReportManager.logPass(Validation_AddGroup.i_symbol);
-  }
-  @Test(priority=18)
-  public void Create_Airtime_Group() throws Exception {
-		ExtentReportManager.startTest("Create_Airtime_Group", "test case description","test case pass");
+	}
+
+	@Test(priority = 18)
+	public void Create_Airtime_Group() throws Exception {
+		ExtentReportManager.startTest("Create_Airtime_Group", "test case description", "test case pass");
 		ExtentReportManager.startReport();
-		log=new AddGroup(driver);
-		List<String> info= PropertyReader.getdata("AddGrouppage", 1);
-		String Email=info.get(0);
-		String Password=info.get(1);
+		log = new AddGroup(driver);
+		List<String> info = PropertyReader.getdata("AddGrouppage", 1);
+		String Email = info.get(0);
+		String Password = info.get(1);
 		log.Click_On_Login_Link();
 		Thread.sleep(3000);
 		log.TRoop_Login(Email, Password);
@@ -786,9 +803,9 @@ public class AddGroupTest {
 		Thread.sleep(3000);
 		log.Click_On_Add_Btn();
 		Thread.sleep(2000);
-		List<String> info1= PropertyReader.getData("AddGrouppage", 9);
-		String groupname=info1.get(0);
-		String description=info1.get(1);
+		List<String> info1 = PropertyReader.getData("AddGrouppage", 9);
+		String groupname = info1.get(0);
+		String description = info1.get(1);
 		Thread.sleep(2000);
 		log.Enter_GroupName(groupname);
 		log.Enter_Description(description);
@@ -825,5 +842,5 @@ public class AddGroupTest {
 		ExtentReportManager.logPass(Validation_AddGroup.i_symbol);
 		ExtentReportManager.logInfo("Click on create button");
 		ExtentReportManager.logPass(Validation_AddGroup.Enter_GroupName_Description);
-  }
+	}
 }
